@@ -7,18 +7,156 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MySite</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 0%;
+            height: 3000px;
+        }
+        
+        .navbar-brand {
+            position: absolute;
+        }
+        
+        .hero {
+            background-image: url('./img/cover.jpg');
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            z-index: -10;
+            height: 100vh;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.322);
+            top: 0;
+            bottom: 0;
+            z-index: -5;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container-fluid {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .opaque-navbar {
+            background-color: rgba(0, 0, 0, 0);
+            /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+            height: 60px;
+            border-bottom: 0px;
+            transition: background-color .5s ease 0s;
+        }
+        
+        .opaque-navbar.opaque {
+            background-color: black;
+            height: 60px;
+            transition: background-color .5s ease 0s;
+        }
+        
+        ul.dropdown-menu {
+            background-color: black;
+        }
+        
+        @media (max-width: 992px) {
+            .opaque-navbar {
+                background-color: black;
+                height: 60px;
+                transition: background-color .5s ease 0s;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar-fixed-top">
-        <div class="navbar-brand">
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                                <span class="navbar-toggler-icon"></span>
+                                                  
+                                                </button>
+                    <a class="navbar-brand" href="#">Abhishek Patel</a>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-overlay">
+
+
+
+
+            </div>
 
         </div>
 
+        <section>
+            <div class="container-fluid">
+                <h1>
+                    THIS IS ANOTHER SECTION
+                </h1>
+
+
+                <p>
+                    <h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit molestiae veritatis laboriosam placeat, id beatae laborum similique. Porro illum corporis minima sint vel at voluptas sit modi. Minima, aliquam modi?
+                    </h3>
+                </p>
+
+
+
+
+            </div>
+
+
+
+            <h2 id="about">testing the scroll</h2>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea laudantium praesentium in similique iste, voluptatibus, voluptate, aspernatur quaerat maiores veniam cum esse dolores ut voluptas culpa ipsum velit eos!</h3>
+
+
+        </section>
+
+
 
     </div>
-
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) /*height in pixels when the navbar becomes non opaque*/ {
+                $('.opaque-navbar').addClass('opaque');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+            }
+        });
+    </script>
+    <script src="smooth-scroll.js"></script>
 </body>
 
 </html>
