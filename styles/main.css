@@ -3351,7 +3351,7 @@ body {
 .nav-pills .nav-item .nav-link.active,
 .nav-pills .nav-item .nav-link.active:focus,
 .nav-pills .nav-item .nav-link.active:hover {
-    background-color: #9A9A9A;
+    background-color: rgb(255, 0, 0);
     color: #FFFFFF;
     -webkit-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
@@ -3378,13 +3378,13 @@ body {
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:hover {
     background-color: #FFFFFF;
-    color: #378C3F;
+    color: rgb(140, 55, 55);
 }
 
 .nav-pills.nav-pills-primary .nav-item .nav-link.active,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
-    background-color: #378C3F;
+    background-color: rgb(140, 55, 55);
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active,
@@ -3396,7 +3396,7 @@ body {
 .nav-pills.nav-pills-success .nav-item .nav-link.active,
 .nav-pills.nav-pills-success .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
-    background-color: #18ce0f;
+    background-color: #ce0f0f;
 }
 
 .nav-pills.nav-pills-warning .nav-item .nav-link.active,
@@ -7572,7 +7572,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-reference .carousel-indicators .active {
-    background-color: #378C3F;
+    background-color: rgb(255, 0, 0);
 }
 
 .cc-reference .carousel-inner {
