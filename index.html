@@ -15,10 +15,10 @@
     <script src="js/angular.js"></script>
 </head>
 
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="top" ng-app="myCV" ng-controller="mainCtrl">
     <header>
         <div class="profile-page sidebar-collapse">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-danger" color-on-scroll="400">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
                 <div class="container">
                     <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Abhishek Patel</a>
                         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
@@ -40,7 +40,7 @@
         <div>
             <div class="profile-page">
                 <div class="wrapper">
-                    <div class="page-header page-header-small" filter-color="orange">
+                    <div class="page-header page-header-small" filter-color="green">
                         <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-2.jpg');"></div>
                         <div class="container">
                             <div class="content-center">
@@ -48,16 +48,16 @@
                                     <a href="#"><img src="images/abhishek.jpg" alt="Abhishek" /></a>
                                 </div>
                                 <div class="h2 title">Abhishek Patel</div>
-                                <p class="category text-white">Web Developer</p><a class="btn btn-danger smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-danger" href="images/Resume_Abhishek_Patel.pdf" data-aos="zoom-in"
+                                <p class="category text-white">Web Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="images/Resume_Abhishek_Patel.pdf" data-aos="zoom-in"
                                     data-aos-anchor="data-aos-anchor" download>Download CV</a>
                             </div>
                         </div>
                         <div class="section">
                             <div class="container">
-                                <div class="button-container"><a class="btn btn-danger btn-round btn-lg btn-icon" href="https://www.facebook.com/DrTrapp23" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
-                                    <a class="btn btn-danger btn-round btn-lg btn-icon" href="https://twitter.com/drtrap_23" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
-                                    <a class="btn btn-danger btn-round btn-lg btn-icon" href="https://www.instagram.com/drtrap_23/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
-                                    <a class="btn btn-danger btn-round btn-lg btn-icon" href="https://github.com/apatel94" rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i></a></div>
+                                <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/DrTrapp23" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/drtrap_23" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/drtrap_23/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
+                                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/apatel94" rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -72,9 +72,9 @@
                                     <div class="h4 mt-0 title">About</div>
                                     <p>Hello! I am Abhishek Patel, a Web Developer.</p>
                                     <p>This is my online cv/resume/postfolio. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive web application is perfect to showcase my portfolio, skills and experience.
-                                        <a href="#skill" class="smooth-scroll" target="_blank">Learn More</a></p>
-                                    <p ng-show="false">I guess you are here because you want to know a bit more about me, huh? I'm not all that good at talking about myself, but I'll give it a shot.</p>
-
+                                        <a href="#skill" class="smooth-scroll" target="_blank">Learn More</a>
+                                        <p ng-show="false">I guess you are here because you want to know a bit more about me, huh? I'm not all that good at talking about myself, but I'll give it a shot.</p>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -113,64 +113,48 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">HTML</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">CSS</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">JavaScript</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">AngularJs</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">Bootstrap</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">PHP/SQL</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">AngularJs</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">VB.NET</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="progress-container progress-danger"><span class="progress-badge">Linux/Unix</span>
+                                    <div class="progress-container progress-primary"><span class="progress-badge">PHP/SQL</span>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
+                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div><span class="progress-value">50%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -185,10 +169,10 @@
                         <div class="col-md-6 ml-auto mr-auto">
                             <div class="h4 text-center mb-4 title">Portfolio</div>
                             <div class="nav-align-center">
-                                <ul class="nav nav-pills nav-pills-danger" role="tablist">
+                                <ul class="nav nav-pills nav-pills-primary" role="tablist">
                                     <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-music" aria-hidden="true"></i></a></li>
-
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -199,29 +183,47 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                            <a href="https://github.com/apatel94/MainProject.git">
+                                            <a href="#web-development">
                                                 <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Recent Project - Real Estate Application</div>
+                                                        <div class="h4">Recent Project</div>
                                                         <p>Web Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
-
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Startup Project</div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                            <a href="https://github.com/apatel94/AngularApp">
-                                                <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Class Assignments</div>
+                                                        <div class="h4">Food Order Project</div>
                                                         <p>Web Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
-
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#web-development">
+                                                <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Web Advertising Project</div>
+                                                        <p>Web Development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -231,21 +233,21 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                            <a href="https://soundcloud.com/brown-boi94/starboy-remix">
-                                                <figure class="cc-effect"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/461073876&color=%23f70000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">StarBoy Remix</div>
-                                                        <p>Audio Production</p>
+                                                        <div class="h4">Triangle Pattern</div>
+                                                        <p>Graphic Design</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
                                         </div>
                                         <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                            <a href="https://soundcloud.com/brown-boi94/starboy-the-weekend-chilltrap-mix">
-                                                <figure class="cc-effect"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/333593382&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">The Weekend - Trap Remix</div>
-                                                        <p>Audio Production</p>
+                                                        <div class="h4">Abstract Umbrella</div>
+                                                        <p>Graphic Design</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
@@ -253,11 +255,21 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                            <a href="https://soundcloud.com/brown-boi94/hoptothetop">
-                                                <figure class="cc-effect"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/333373968&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">HopToDaTop</div>
-                                                        <p>Audio Production</p>
+                                                        <div class="h4">Cube Surface Texture</div>
+                                                        <p>Graphic Design</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#graphic-design">
+                                                <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Abstract Line</div>
+                                                        <p>Graphic Design</p>
                                                     </figcaption>
                                                 </figure>
                                             </a>
@@ -266,7 +278,56 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="tab-pane" id="Photography" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Wedding Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Beach Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                            <a href="#Photography">
+                                                <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image" />
+                                                    <figcaption>
+                                                        <div class="h4">Nature Photoshoot</div>
+                                                        <p>Photography</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -275,7 +336,7 @@
                     <div class="h4 text-center mb-4 title">Work Experience</div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-experience-header">
                                     <p>July 2017 - July 2017</p>
                                     <div class="h5">Just For Laughs</div>
@@ -284,15 +345,15 @@
                             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body">
                                     <div class="h5">Volunteer</div>
-                                    <p><b>Task Assigned:</b> Just for Laughs Festival | Guide the special guest during their stay in Montreal. Make sure the artist's hotel check-in.</p>
-                                    </p>
+                                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-experience-header">
                                     <p>March 2017 - April 2017</p>
                                     <div class="h5">Matrix College</div>
@@ -301,14 +362,15 @@
                             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body">
                                     <div class="h5">Volunteer</div>
-                                    <p><b>Task Assigned:</b> To setup class rooms for new students. Make sure all the hardwares required in the class are connected, diagnosed and ready to use for students and faculty members.</p>
+                                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-experience-header">
                                     <p>January 2015 - July 2015</p>
                                     <div class="h5">SHREE DEVELOPERS</div>
@@ -317,8 +379,8 @@
                             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body">
                                     <div class="h5">Office-Administrative Assistant</div>
-                                    <p><b>Primary Responsibilities:</b> Performing general clerical duties to include but not limited to: photocopying, faxing, mail distribution and filing. Coordinates and maintains records for staff office space, phones,
-                                        company credit cards and office keys. Creates and modifies various documents using Microsoft Office.</p>
+                                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +392,7 @@
                     <div class="h4 text-center mb-4 title">Education</div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-education-header">
                                     <p>2017-2018</p>
                                     <div class="h5">Attestation of College Studies</div>
@@ -340,15 +402,15 @@
                                 <div class="card-body">
                                     <div class="h5">Programmer Analyst : Web Development</div>
                                     <p class="category">Montreal College Of Information Technology</p>
-                                    <p>A web programmer’s responsibilities comprise planning web site layout and navigation, coding the actual web pages, then testing and optimizing the website for superior user experience and optimum performance. The primary
-                                        objective of this web development program was to study an organization’s web development needs and design web solutions to serve those needs. This program made me capable to do so and much more.</p>
+                                    <!--p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p-->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-education-header">
                                     <p>2016 - 2018</p>
                                     <div class="h5">Attestation of College Studies</div>
@@ -358,15 +420,15 @@
                                 <div class="card-body">
                                     <div class="h5">Financial Services and Financial Security Advisory</div>
                                     <p class="category">Cégep de la Gaspésie et des Îles</p>
-                                    <p>The program focused on the acquisition of competencies related to communication, accounting for individuals and businesses, customer service, organization of work, management tools, understanding economic information
-                                        and the analysis of financial data.</p>
+                                    <!--p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p-->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-3 bg-danger" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                                 <div class="card-body cc-education-header">
                                     <p>2012 - 2015</p>
                                     <div class="h5">Bachelor's Degree</div>
@@ -376,8 +438,8 @@
                                 <div class="card-body">
                                     <div class="h5">Bachelor of Computer Application</div>
                                     <p class="category">Sardar Patel University</p>
-                                    <p>Bachelor of Computer Applications is a three-year undergraduate degree course in the field of computer applications/computer science. Relevant courses were Programming languages, computer architecture, networking, client-side
-                                        programming, server-side programming, digital electronics, software engineering, bussiness inforamtion system and many more.</p>
+                                    <!--p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque
+                                        cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p-->
                                 </div>
                             </div>
                         </div>
@@ -399,7 +461,7 @@
                                     <div class="row">
                                         <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image" />
                                             <div class="h5 pt-2">Rahul Singh</div>
-                                            <p class="category">Dev Team / Wiidii</p>
+                                            <p class="category">Team Of Developers / Wiidii</p>
                                         </div>
                                         <div class="col-lg-10 col-md-9">
                                             <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam
@@ -437,7 +499,7 @@
                 </div>
             </div>
             <div class="section" id="contact">
-                <div class="cc-contact-information" data-aos="zoom-in" style="background-image: url('images/staticmap.png'); background-repeat: no-repeat; background-position: center; background-size: 80%">
+                <div class="cc-contact-information">
 
                     <div class="container">
                         <div class="cc-contact">
@@ -480,7 +542,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <button class="btn btn-danger" type="submit">Send</button>
+                                                                <button class="btn btn-primary" type="submit">Send</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -496,7 +558,8 @@
                                                     <p>abhipatel151294@gmail.com</p>
                                                 </div>
                                             </div>
-
+                                            <iframe data-aos="zoom-in" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.793337319699!2d-73.58354248415466!3d45.494106239467925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a6b71a0f61b%3A0x5587f050fee22556!2s1845+Boulevard+de+Maisonneuve+O%2C+Montr%C3%A9al%2C+QC+H3H+1J9!5e0!3m2!1sen!2sca!4v1530155989222"
+                                                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -512,16 +575,8 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="container text-center"><a class="btn btn-danger btn-round btn-lg btn-icon" href="https://www.facebook.com/DrTrapp23" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-danger btn-round btn-lg btn-icon" href="https://twitter.com/drtrap_23"
-                rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-danger btn-round btn-lg btn-icon " href="https://www.instagram.com/drtrap_23/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram fa-2x"></i></a> <a class="btn btn-danger btn-round btn-lg btn-icon" href="https://github.com/apatel94"
-                rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i></a></div>
-        </div>
-
-
-
-
-
+        <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link"
+                href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
         <div class="h4 title text-center">Abhishek Patel</div>
         <div class="text-center text-muted">
             <p>&copy; Abhishek Patel. All rights reserved.<br>Design - <a class="credit" href="https://github.com/apatel94" target="_blank">Abhishek Patel</a></p>
